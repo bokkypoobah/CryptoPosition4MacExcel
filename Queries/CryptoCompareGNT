@@ -1,0 +1,9 @@
+WEB
+1
+https://min-api.cryptocompare.com/data/price?fsym=GNT&tsyms=BTC,ETH,AUD,USD
+
+Selection=Cell
+Formatting=None
+PreFormattedTextToColumns=True
+ConsecutiveDelimitersAsOne=True
+SingleBlockTextImport=False
