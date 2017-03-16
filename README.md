@@ -43,6 +43,40 @@ Group Containers/UBF8T346G9.Office/User Content.localized/Queries/` subdirectory
     ConsecutiveDelimitersAsOne=True
     SingleBlockTextImport=False
 
+## Excel Macros
+
+The spreadsheet contains the following Excel macros:
+
+    ' Option Explicit
+    ' Crypto Position For Excel On The Mac
+    '
+    ' If you find this spreadsheet useful, please send any ETH or token donations to
+    ' 0x000001f568875f378bf6d170b790967fe429c81a
+    '
+    ' Enjoy. (c) BokkyPooBah 2016. The MIT licence.
+
+    Sub RefreshRates()
+        ActiveWorkbook.RefreshAll
+    End Sub
+
+    ' Note that this is not a proper JSON string parser, but
+    ' just a simple function to search for some text and return
+    ' the following number
+    Public Function getNumber(ccy As String, json As String) As Variant
+        Dim startPos As Integer
+        Dim endPos As Integer
+        Dim temp As String
+
+        startPos = InStr(json, ccy) + Len(ccy) + 2
+        temp = Mid(json, startPos)
+        endPos = InStr(temp, ",")
+        If (endPos = 0) Then
+            endPos = InStr(temp, "}")
+        End If
+
+        getNumber = Val(Mid(temp, 1, endPos - 1))
+    End Function
+
 
 
 Enjoy. (c) BokkyPooBah 2016. The MIT licence.
