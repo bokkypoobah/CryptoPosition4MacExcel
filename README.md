@@ -91,5 +91,6 @@ The spreadsheet contains the following Excel macros:
     End Function
 
 
+If you find this spreadsheet useful, please send any ETH or token donations to [0x000001f568875f378bf6d170b790967fe429c81a](https://etherscan.io/address/0x000001f568875f378bf6d170b790967fe429c81a).
 
 Enjoy. (c) BokkyPooBah 2016. The MIT licence.
