@@ -43,6 +43,19 @@ Group Containers/UBF8T346G9.Office/User Content.localized/Queries/` subdirectory
     ConsecutiveDelimitersAsOne=True
     SingleBlockTextImport=False
 
+## Linking Your Custom Queries Files Into Excel
+
+### Retrieving The Custom Queries Data
+In the **Rates** worksheet, add any new columns required with the digital currency symbol as a header. In the second row of this worksheet, select the cell under the new digital currency symbol. Select the menu *Data* -> *Get External Data* -> *Run Saved Query...* . Select the new query file created based on the templates in the previous section above. Click on the **Get Data** button. Click on the **OK** button to insert it into the selected cell.
+
+### Extracting Numbers From The Queries Results Into The Rates Worksheet
+In the **Rates** worksheet, copy the formula under the **ETH** column to the newly create digital currency column.
+
+Note that the cell B3 for the BTC to BTC rate is a special case where CryptoCompare returns no results, while the cell C4 for the ETH to ETH rate is 1.
+
+### Linking The Extracted Numbers In The Position Worksheet
+Link the relevant rates from the **Rates** worksheet into the appropriate cells in the **Position** worksheet.
+
 ## Excel Macros
 
 The spreadsheet contains the following Excel macros:
