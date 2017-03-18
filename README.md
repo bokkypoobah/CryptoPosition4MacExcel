@@ -1,6 +1,8 @@
 # CryptoPosition4MacExcel
 Crypto Position For Excel On The Mac
 
+Status: **Work In Progress**
+
 This repository contains an Excel for Mac spreadsheet that will allow you to retrieve rates from https://min-api.cryptocompare.com.
 
 Unlike Excel for Windows where you can easily retrieve data from web pages, Excel for Mac requires your to create Queries to retrieve data from web pages.
